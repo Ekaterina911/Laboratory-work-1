@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Laboratory_work_1
 {
-    class Task1_3 : ITask
+    public class Task1_3 : ITask
     {
         private double X { get; set; }
         private readonly int A = 3;
@@ -25,8 +25,8 @@ namespace Laboratory_work_1
         {
             double d = Denominator(X);
             double n = Numerator(X);
-            if (d != 0)
-                return 0;
+            if (d == 0)
+                return -1;
             else return n / d;
         }
 
