@@ -50,6 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Task\Task1_2Tests.cs" />
+    <Compile Include="Task\Task1_3Tests.cs" />
     <Compile Include="Task\Task1_1Tests.cs" />
   </ItemGroup>
   <ItemGroup>
