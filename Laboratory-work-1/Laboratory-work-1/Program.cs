@@ -6,14 +6,18 @@ namespace Laboratory_work_1
     {
         static void Main(string[] args)
         {
-            Task1_1 one = new Task1_1(-5);
-            one.Print();
+            Task1_5 f = new Task1_5(4);
+            //f.Print();
+            Console.WriteLine($"Числитель: {f.Numerator(4)}");
+            Console.WriteLine($"Знаменатель: { f.Denominator(4)}");
+            int A = 2;
+            double X = 4;
+            //Console.WriteLine(Math.Pow(A, Math.Pow(X, A)));
+            //Console.WriteLine(Math.Pow(X, Math.Pow(A, A * X)));
+            double y = Math.Pow(A, Math.Pow(X, A)) *
+       Math.Pow(X, Math.Pow(A, A * X));
 
-            Task1_2 two = new Task1_2(4);
-            two.Print();
-
-            Task1_3 three = new Task1_3(4);
-            three.Print();
+            Console.WriteLine($"Числитель   : {y}");
 
             Console.ReadKey();
         }
