@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Laboratory_work_1
 {
-    class Task1_1
+    public class Task1_1 : ITask
     {
         private double X { get; set; }
 
@@ -15,22 +11,26 @@ namespace Laboratory_work_1
             this.X = X;
         }
 
-        public void ResultTask()
+        public void Print()
+        {
+            Console.WriteLine($"Y = {ResultTask()}");
+        }
+
+        public double ResultTask()
         {
             double d = Denominator(X);
             double n = Numerator(X);
-            if (d != 0)
-                Console.WriteLine($"Y = {n / d}");
-            else
-                Console.WriteLine("Знаменатель равен 0");
+            if (d == 0)
+                return 0;
+            else return n / d;
         }
 
-        private double Numerator(double X)
+        public double Numerator(double X)
         {
             return 2 * Math.Pow(X, 3) + 6 * Math.Pow(X, 2) - 8 * X + 4;
         }
 
-        private double Denominator(double X)
+        public double Denominator(double X)
         {
             return ((-4) * Math.Pow(X, 3)) + (8 * Math.Pow(X, 2)) - (Math.Pow(X, 5)) + 2 * Math.Pow(X, 4);
         }
