@@ -10,7 +10,5 @@ namespace Laboratory_work_1
     {
         void Print();
         double ResultTask();
-        double Numerator(double X);
-        double Denominator(double X);
     }
 }

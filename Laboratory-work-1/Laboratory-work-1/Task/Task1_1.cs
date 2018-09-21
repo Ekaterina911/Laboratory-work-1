@@ -25,12 +25,12 @@ namespace Laboratory_work_1
             else return n / d;
         }
 
-        public double Numerator(double X)
+        private double Numerator(double X)
         {
             return 2 * Math.Pow(X, 3) + 6 * Math.Pow(X, 2) - 8 * X + 4;
         }
 
-        public double Denominator(double X)
+        private double Denominator(double X)
         {
             return ((-4) * Math.Pow(X, 3)) + (8 * Math.Pow(X, 2)) - (Math.Pow(X, 5)) + 2 * Math.Pow(X, 4);
         }

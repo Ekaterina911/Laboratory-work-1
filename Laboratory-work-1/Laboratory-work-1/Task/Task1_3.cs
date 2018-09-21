@@ -30,7 +30,7 @@ namespace Laboratory_work_1
             else return n / d;
         }
 
-        public double Numerator(double X)
+        private double Numerator(double X)
         {
             return X * Math.Log10(X + 1) + Math.Log10(X + 1) +
                    X * Math.Log10(A) + Math.Log10(A) +
@@ -38,7 +38,7 @@ namespace Laboratory_work_1
                    Math.Pow(A, X + 1) * Math.Log10(A);
         }
 
-        public double Denominator(double X)
+        private double Denominator(double X)
         {
             return Math.Log10(A) + Math.Log10(X + 1);
         }

@@ -26,13 +26,13 @@ namespace Laboratory_work_1
             else return n / d;
         }
 
-        public double Numerator(double X)
+        private double Numerator(double X)
         {
             return (1 - Math.Sqrt(Math.Abs(Math.Log(X,2))) + 
                     25 * Math.Pow(10, -5) * Math.Log10(X));
         }
 
-        public double Denominator(double X)
+        private double Denominator(double X)
         {
             return (Math.Log(X, 2) + 0.00025 * Math.Log10(X));
         }
