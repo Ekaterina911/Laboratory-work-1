@@ -6,7 +6,6 @@ namespace Laboratory_work_1
     {
         static void Main(string[] args)
         {
-
             Console.ReadKey();
         }
     }
